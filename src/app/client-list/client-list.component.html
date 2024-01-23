@@ -1,0 +1,70 @@
+<table class="table">
+    <thead class="">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Mobile No.</td>
+            <td>Email ID</td>
+            <td>City</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td routerLink="./client-detail">12345</td>
+            <td>Apple</td>
+            <td>9876543211</td>
+            <td>appleapple.com</td>
+            <td>tiruvannamalai</td>
+        </tr>
+        <tr>
+            <td routerLink="./client-detail">12567</td>
+            <td>orange</td>
+            <td>9876543211</td>
+            <td>orangeapple.com</td>
+            <td>chennai</td>
+        </tr>
+        <tr>
+            <td routerLink="./client-detail">13452</td>
+            <td>mango</td>
+            <td>9876543211</td>
+            <td>mangoapple.com</td>
+            <td>tiruvannamalai</td>
+        </tr>
+        <tr>
+            <td routerLink="./client-detail">14523</td>
+            <td>grape</td>
+            <td>9876543211</td>
+            <td>grapeapple.com</td>
+            <td>chennai</td>
+        </tr>
+
+    </tbody>
+</table>
+<div class="d-flex justify-content-center">
+    <div class=" d-flex justify-content-center mt-5 me-1">
+        <a routerLink="./add" class="border ps-4 pe-4 pt-1 pb-1 text-decoration-none text-success"
+            routerLinkActive="active">Add</a>
+    </div>
+    <div class=" d-flex justify-content-center mt-5">
+        <a routerLink="./edit" class="border ps-4 pe-4 pt-1 pb-1 text-decoration-none text-success"
+            routerLinkActive="active">Edit</a>
+    </div>
+    <div class=" d-flex justify-content-center mt-5 ms-1">
+        <a routerLink="./client-detail" routerLinkActive="active"
+            class="border ps-4 pe-4 pt-1 pb-1 text-decoration-none text-success">Client Detail</a>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+<!-- <table>
+    <tr>
+        <th *ngFor = 'let column of headers'>
+{{column}}
+        </th>
+    </tr>
+    <tr *ngFor = 'let row of rows'>
+        <td *ngFor = 'let column of headers'>
+{{row[column]}}
+        </td>
+    </tr>
+</table> -->
